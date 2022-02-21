@@ -1,86 +1,20 @@
 h1 {
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-
+    color: white;
 }
 
-body {
-    font-family: 'Poppins', sans-serif; 
-    min-height: 100vh;
-    font-size: 1.5rem;
-    background-color:#222222;
+h2, h3, p {
+    color: rgb(134, 133, 133);
 }
 
 
-/* Field inputs */
-
-
-
-
-.whole-field-area {
-    box-sizing: border-box;
-    color: #000;
-    font-family: Verdana,sans-serif;
-    font-size: 15px;
-    line-height: 22.5px;
-    padding: 0 8px;
-  }
-  
-
-
-  .whole-field-area:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-
-
-  .whole-field-area:before {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .inner-whole-field-area {
-    box-sizing: inherit;
-    color: #000;
-    float: left;
-    font-family: Verdana,sans-serif;
-    font-size: 15px;
-    line-height: 22.5px;
-    padding: 0 8px;
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
     width: 100%;
-    
   }
   
-/* Media query for .inner-whole-field-area */
-
-  @media (min-width: 601px) {
-    .inner-whole-field-area {
-      width: 50%;
-      margin: 0 25% 0 25%;  
-      
-    }
- 
-    }
- 
-
-  /* END: Media query for .inner-whole-field-area */
-
-
-
-  .whole-field-area .inner-whole-field-area {
-    box-sizing: inherit;
-     
-}
-
-
-
-
-  .input-field {
-   
+  .form__field {
     font-family: inherit;
     width: 100%;
     border: 0;
@@ -92,32 +26,81 @@ body {
     background: transparent;
     transition: border-color 0.2s;
   }
-
-
-
-
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
   
-
-  .input-field:focus {
-    
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
     top: 0;
     display: block;
     transition: 0.2s;
     font-size: 1rem;
     color: #11998e;
-    font-weight:700;  
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+  
+  /* demo */
+  body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    background-color: #222222;
   }
 
 
+
+  .text_box {
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat no-repeat;
+    box-sizing: inherit;
+    color: #4a4a4a;
+    cursor: default;
+    font-family: poppins,Helvetica,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: -.1px;
+    line-height: 32px;
+    
+  }
   
 
-  .input-label:focus {
-    padding-bottom: 6px;  
-    font-weight: 700;
-    border-width: 3px;
-    border-image: linear-gradient(to right, #11998e,#38ef7d);
-    border-image-slice: 1;
+
+  @media (min-width: 768px) {
+    .text_box, .form__group {
+      margin-right: 103px;
+      margin-top: 8px;
+      width: 35%;
+    }
   }
-
-
-/* END - Field inputs */
