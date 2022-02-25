@@ -16,9 +16,9 @@ function calc() {
       }
       sleep(2000).then(() => { 
 
-    if (document.getElementById("cpm").value > 10 && document.getElementById("cpm").value < 45) {
+    if (document.getElementById("cpm").value >= 10 && document.getElementById("cpm").value <= 45) {
         cpmResult.innerHTML = 'You are within the recommended CPM range.👍'
-    } else if (document.getElementById("cpm").value >= 0 && document.getElementById("cpm").value <= 10) {
+    } else if (document.getElementById("cpm").value >= 0 && document.getElementById("cpm").value < 10) {
         cpmResult.innerHTML = 'Your price is too low. You should consider raising your price.⬆️'
     } else if (document.getElementById("cpm").value === 'NaN') {
         cpmResult.innerHTML = ''
