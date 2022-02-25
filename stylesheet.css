@@ -1,9 +1,9 @@
 h1 {
-    color: white;
+    color: rgb(229, 226, 226);
 }
 
 h2, h3, p {
-    color: rgb(134, 133, 133);
+    color: rgb(229, 226, 226);
 }
 
 
@@ -96,7 +96,7 @@ h2, h3, p {
     font-weight: 500;
     letter-spacing: -.1px;
     line-height: 32px;
-    line-clamp: ;
+    
     
   }
   
