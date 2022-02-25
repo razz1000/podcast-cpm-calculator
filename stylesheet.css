@@ -96,10 +96,10 @@ h2, h3, p {
     font-weight: 500;
     letter-spacing: -.1px;
     line-height: 32px;
+    line-clamp: ;
     
   }
   
-
 
   @media (min-width: 768px) {
     .text_box, .form__group {
