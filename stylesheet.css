@@ -51,6 +51,9 @@ h2, h3, p {
     border-image: linear-gradient(to right, #11998e, #38ef7d);
     border-image-slice: 1;
   }
+
+
+
   .form__field:focus ~ .form__label {
     position: absolute;
     top: 0;
@@ -59,6 +62,7 @@ h2, h3, p {
     font-size: 1rem;
     color: #11998e;
     font-weight: 700;
+    margin-top: -5px;
   }
   
   /* reset input */
@@ -112,6 +116,10 @@ h2, h3, p {
 
 }
 
+#cpm::placeholder {
+  color: white;
+}
+
 #cpm_result {
   color: white;
   margin-top: 20px;
@@ -125,6 +133,7 @@ h2, h3, p {
   margin-right: 103px;
   margin-top: 8px;
   width: 35%;
+ 
 
 }
 }
