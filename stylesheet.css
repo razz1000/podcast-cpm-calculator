@@ -114,4 +114,15 @@ h2, h3, p {
 #cpm_result {
   color: white;
   margin-top: 20px;
+  
+}
+
+@media (min-width: 768px) {
+
+#cpm_result { 
+  margin-right: 103px;
+  margin-top: 8px;
+  width: 35%;
+
+}
 }

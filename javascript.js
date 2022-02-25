@@ -10,10 +10,20 @@ function calc() {
     var price = parseInt(price, 10);
     var cpm = (price / listeners) * 1000;
     document.getElementById("cpm").value = cpm;  
-    
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      sleep(2000).then(() => { 
+
     if (document.getElementById("cpm").value < 45) {
         cpmResult.innerHTML = 'You are within the recommended CPM range.👍'
     } else {
-        cpmResult.innerHTML = 'You are NOT within the recommended CPM range ($10-45). Consider lowering your price'
+        cpmResult.innerHTML = 'You are NOT within the recommended CPM range ($10-45). Consider lowering your price.⬇️'
     }
 }
+
+
+); };
+
+
