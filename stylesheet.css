@@ -108,6 +108,7 @@ h2, h3, p {
 #cpm {
   min-height: 35px;
   background-color: grey;
+  font-size: 20px;
 
 }
 
@@ -120,6 +121,7 @@ h2, h3, p {
 @media (min-width: 768px) {
 
 #cpm_result { 
+
   margin-right: 103px;
   margin-top: 8px;
   width: 35%;
