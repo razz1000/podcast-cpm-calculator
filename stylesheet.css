@@ -104,3 +104,14 @@ h2, h3, p {
       width: 35%;
     }
   }
+
+#cpm {
+  min-height: 35px;
+  background-color: grey;
+
+}
+
+#cpm_result {
+  color: white;
+  margin-top: 20px;
+}
