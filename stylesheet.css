@@ -6,8 +6,13 @@ h2, h3, p {
     color: rgb(229, 226, 226);
 }
 
+.p_header {
+  font-size: 17px;
+  line-height: 1.4em;
+  color:rgb(229, 226, 226)
+}
 
-.form__group {
+.form__group  {
     position: relative;
     padding: 15px 0 0;
     margin-top: 10px;
@@ -35,6 +40,12 @@ h2, h3, p {
     top: 20px;
   }
   
+.field3 {
+  display: grid;
+  margin-top: -20px;
+  color: white;
+}
+
   .form__label {
     position: absolute;
     top: 0;
@@ -101,18 +112,32 @@ h2, h3, p {
   }
   
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     .text_box, .form__group {
       margin-right: 103px;
       margin-top: 8px;
-      width: 35%;
+      width: 40%;
+      max-width: 650px;
     }
   }
 
+  @media (min-width: 1000px) {
+    .header {
+      margin-right: 103px;
+      margin-top: 8px;
+      width: 40%;
+      max-width: 650px;
+    
+    }
+  }
+  
+
 #cpm {
+  
   min-height: 35px;
   background-color: grey;
   font-size: 20px;
+  
 
 }
 
@@ -126,13 +151,14 @@ h2, h3, p {
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
-#cpm_result { 
+#cpm_result  { 
 
   margin-right: 103px;
   margin-top: 8px;
-  width: 35%;
+  width: 40%;
+  max-width: 650px;
  
 
 }

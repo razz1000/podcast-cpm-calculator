@@ -16,14 +16,14 @@ function calc() {
       }
       sleep(2000).then(() => { 
 
-    if (document.getElementById("cpm").value >= 10 && document.getElementById("cpm").value <= 45) {
-        cpmResult.innerHTML = 'You are within the recommended CPM range.👍'
+    if (document.getElementById("cpm").value >= 10 && document.getElementById("cpm").value <= 35) {
+        cpmResult.innerHTML = "<span style='color: #4ef018;'>Your price is within the recommended CPM range.👍</span>"
     } else if (document.getElementById("cpm").value >= 0 && document.getElementById("cpm").value < 10) {
-        cpmResult.innerHTML = 'Your price is too low. You should consider raising your price.⬆️'
+        cpmResult.innerHTML = "<span style='color: yellow;'>Your price is quite low. You should consider raising your price.⬆️</span>"
     } else if (document.getElementById("cpm").value === 'NaN') {
         cpmResult.innerHTML = ''
     } else {
-        cpmResult.innerHTML = 'You are NOT within the recommended CPM range ($10-45). Consider lowering your price.⬇️'
+        cpmResult.innerHTML = "<span style='color: red;'>You are NOT within the recommended CPM range ($10-35). Consider lowering your price.⬇️</span>"
     }
 }
 
