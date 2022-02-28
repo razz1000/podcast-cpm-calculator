@@ -23,7 +23,7 @@ function calc() {
     } else if (document.getElementById("cpm").value === 'NaN') {
         cpmResult.innerHTML = ''
     } else {
-        cpmResult.innerHTML = "<span style='color: red;'>You are NOT within the recommended CPM range ($10-35). Consider lowering your price.⬇️</span>"
+        cpmResult.innerHTML = "<span style='color: red;'>Your price is NOT within the recommended CPM range ($10-35). Consider lowering your price.⬇️</span>"
     }
 }
 
